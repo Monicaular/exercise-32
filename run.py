@@ -16,3 +16,12 @@ def pick_random_word():
     # print out the word at that index
     word = words[index].strip()
     return word
+
+def ask_user_for_next_letter():
+    """
+    This function prompts the user to input a letter,
+    removes any leading or trailing whitespaces, converts it to uppercase,
+    and returns the letter.
+    """
+    letter = input("Guess your letter: ")
+    return letter.strip().upper()
